@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct PushButton: View {
+    
+    @StateObject private var dataController = DataController()
+    
     let title: String
     @Binding var isOn: Bool
     
