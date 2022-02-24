@@ -31,10 +31,29 @@ struct AddBookView: View {
                         ForEach(genres, id: \.self) {
                             Text($0)
                         }
-                    }
+                    } // MARK:  End of picker
+                } // MARK:  End of section
+                
+                Section {
+                    TextEditor(text: $review)
                     
+                    Picker("Rating", selection: $rating) {
+                        ForEach (0..<6) {
+                            Text(String($0))
+                        }
+                    }
+                } // MARK:  End of section
+            header: {
+                Text("Write a Review")
+            }
+                
+                Section {
+                    Button("Save") {
+                        // add book
+                    }
                 } // MARK:  End of section
             } // MARK:  End of form
+            .navigationTitle("Add Book")
         } // MARK:  End of Nav view
     }
 }
