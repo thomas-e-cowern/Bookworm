@@ -49,7 +49,18 @@ struct AddBookView: View {
                 
                 Section {
                     Button("Save") {
-                        // add book
+                        
+                        let newBook = Book(context: managedObjContext)
+                        
+                        newBook.id = UUID()
+                        newBook.title = title
+                        newBook.author = author
+                        newBook.rating = Int16(rating)
+                        newBook.genre = genre
+                        newBook.review = review
+                        
+                        try? managedObjContext.save()
+                        
                     }
                 } // MARK:  End of section
             } // MARK:  End of form

@@ -9,7 +9,13 @@ import SwiftUI
 
 struct PushButton: View {
     
+    @Environment(\.managedObjectContext) var managedObjContext
+    @FetchRequest(sortDescriptors: []) var books: FetchedResults<Book>
+    
+    @State private var showingAddScreen: Bool = false
+    
     @StateObject private var dataController = DataController()
+    
     
     let title: String
     @Binding var isOn: Bool
