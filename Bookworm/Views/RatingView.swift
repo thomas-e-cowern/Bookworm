@@ -36,7 +36,7 @@ struct RatingView: View {
                     }
             }
         }
-        .frame(width: 300, height: 100, alignment: .center)
+        .frame(width: 300, height: 60, alignment: .center)
     }
     
     func image(for number: Int) -> Image {
