@@ -10,6 +10,7 @@ import SwiftUI
 struct AddBookView: View {
     // MARK:  Properties
     @Environment(\.managedObjectContext) var managedObjContext
+    @Environment(\.dismiss) var dismiss
     
     @State private var title = ""
     @State private var author = ""
@@ -25,7 +26,7 @@ struct AddBookView: View {
             Form {
                 Section {
                     TextField("Name of Book", text: $title)
-                    TextField("Author Name", text: $title)
+                    TextField("Author Name", text: $author)
                     
                     Picker("Genre", selection: $genre) {
                         ForEach(genres, id: \.self) {
@@ -61,6 +62,7 @@ struct AddBookView: View {
                         
                         try? managedObjContext.save()
                         
+                        dismiss()
                     }
                 } // MARK:  End of section
             } // MARK:  End of form
