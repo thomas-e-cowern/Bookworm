@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4126AB8F27C7AFD200282513 /* Bookworm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4126AB8D27C7AFD100282513 /* Bookworm.xcdatamodeld */; };
+		4126AB9127C7C25F00282513 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4126AB9027C7C25E00282513 /* DataController.swift */; };
 		41CF395F27C7A42300C443D8 /* BookwormApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CF395E27C7A42300C443D8 /* BookwormApp.swift */; };
 		41CF396127C7A42300C443D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CF396027C7A42300C443D8 /* ContentView.swift */; };
 		41CF396327C7A42B00C443D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41CF396227C7A42B00C443D8 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		4126AB8E27C7AFD200282513 /* Bookworm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bookworm.xcdatamodel; sourceTree = "<group>"; };
+		4126AB9027C7C25E00282513 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		41CF395B27C7A42300C443D8 /* Bookworm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookworm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41CF395E27C7A42300C443D8 /* BookwormApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookwormApp.swift; sourceTree = "<group>"; };
 		41CF396027C7A42300C443D8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,6 +52,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		4126AB9227C7C26500282513 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4126AB9027C7C25E00282513 /* DataController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		41CF395227C7A42200C443D8 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +79,7 @@
 		41CF395D27C7A42300C443D8 /* Bookworm */ = {
 			isa = PBXGroup;
 			children = (
+				4126AB9227C7C26500282513 /* Controllers */,
 				4126AB8C27C7AFA300282513 /* Models */,
 				4126AB8B27C7AF8A00282513 /* Views */,
 				41CF395E27C7A42300C443D8 /* BookwormApp.swift */,
@@ -157,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41CF396127C7A42300C443D8 /* ContentView.swift in Sources */,
+				4126AB9127C7C25F00282513 /* DataController.swift in Sources */,
 				4126AB8F27C7AFD200282513 /* Bookworm.xcdatamodeld in Sources */,
 				41CF395F27C7A42300C443D8 /* BookwormApp.swift in Sources */,
 			);
